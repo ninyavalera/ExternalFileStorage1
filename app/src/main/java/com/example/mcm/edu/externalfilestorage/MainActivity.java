@@ -3,6 +3,7 @@ package com.example.mcm.edu.externalfilestorage;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
@@ -18,6 +19,11 @@ import android.os.Environment;
 
 public class MainActivity extends AppCompatActivity {
     static final int READ_BLOCK_SIZE = 100;
+
+    private String filename="valera.test";
+    private String filepath="valera_externalio";
+    File akongFile;
+    String akongGitype;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
